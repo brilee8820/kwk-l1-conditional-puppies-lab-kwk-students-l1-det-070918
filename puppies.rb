@@ -1,19 +1,19 @@
 # 1. Write a method called no_puppies that takes in a number of puppies as an argument. If the number of puppies is greater than zero then this method should return "No more puppies!" otherwise it should return "Well done, Rachel!"
-def no_puppies(number)
-  if number > 0 
+def no_puppies(puppies)
+  if puppies > 0 
     puts "No more puppies!"
-  elsif number < 0
+  elsif puppies < 0
     puts "Well done, Rachel!"
   end
 end
 no_puppies()
 # 2. Rachel's animal accumulation has been going well and we're going to cut her some slack. Write a new method called less_puppies that takes in a number of puppies as an argument and tells Rachel good job when she gets less than 3 puppies, to slow down if she's found exactly 3 puppies, and to get back on her animal restriction if she gets more than 3 puppies.
-def less_puppies(number)
-  if number < 3
+def less_puppies(puppies)
+  if puppies < 3
     puts "Good job, Rachel!"
-  elsif number == 3
+  elsif puppies == 3
     puts "Slow down, Rachel!"
-  elsif number < 3
+  elsif puppies < 3
     puts "More puppies, Rachel!"
   end
 end
